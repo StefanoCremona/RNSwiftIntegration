@@ -14,6 +14,8 @@
 		1D03EC9E1E940E420025D8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D03EC9C1E940E420025D8F5 /* LaunchScreen.storyboard */; };
 		1D03ECA91E940E430025D8F5 /* RNSwiftIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03ECA81E940E430025D8F5 /* RNSwiftIntegrationTests.swift */; };
 		1D03ECB41E940E430025D8F5 /* RNSwiftIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03ECB31E940E430025D8F5 /* RNSwiftIntegrationUITests.swift */; };
+		1D7D37721EC755BF0082813A /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D37711EC755BF0082813A /* CheckOutViewController.swift */; };
+		1D96BF6A1EC76A3E00384FC9 /* MyBestFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1D03ECAF1E940E430025D8F5 /* RNSwiftIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNSwiftIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D03ECB31E940E430025D8F5 /* RNSwiftIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNSwiftIntegrationUITests.swift; sourceTree = "<group>"; };
 		1D03ECB51E940E430025D8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7D37711EC755BF0082813A /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBestFriend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				1D03EC9A1E940E420025D8F5 /* Assets.xcassets */,
 				1D03EC9C1E940E420025D8F5 /* LaunchScreen.storyboard */,
 				1D03EC9F1E940E420025D8F5 /* Info.plist */,
+				1D7D37711EC755BF0082813A /* CheckOutViewController.swift */,
+				1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */,
 			);
 			path = RNSwiftIntegration;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D37721EC755BF0082813A /* CheckOutViewController.swift in Sources */,
+				1D96BF6A1EC76A3E00384FC9 /* MyBestFriend.swift in Sources */,
 				1D03EC961E940E420025D8F5 /* ViewController.swift in Sources */,
 				1D03EC941E940E420025D8F5 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +513,7 @@
 				1D03ECBA1E940E430025D8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D03ECBB1E940E430025D8F5 /* Build configuration list for PBXNativeTarget "RNSwiftIntegrationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				1D03ECBD1E940E430025D8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D03ECBE1E940E430025D8F5 /* Build configuration list for PBXNativeTarget "RNSwiftIntegrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				1D03ECC01E940E430025D8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

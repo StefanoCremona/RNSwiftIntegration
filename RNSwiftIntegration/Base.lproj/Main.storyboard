@@ -25,13 +25,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dNs-WU-JDh">
                                 <rect key="frame" x="16" y="40" width="288" height="96.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQh-XR-HCX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQh-XR-HCX">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-ZN-x66">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Friend Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-ZN-x66">
                                         <rect key="frame" x="0.0" y="28.5" width="288" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -39,7 +39,10 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCD-2I-ile">
                                         <rect key="frame" x="0.0" y="66.5" width="288" height="30"/>
-                                        <state key="normal" title="Order"/>
+                                        <state key="normal" title="Set your best Friend"/>
+                                        <connections>
+                                            <action selector="setYourBestFriend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPk-PK-zgo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -59,10 +62,61 @@
                             <constraint firstItem="dNs-WU-JDh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cgm-4o-ag0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="rQh-XR-HCX" id="JOW-BT-pTh"/>
+                        <outlet property="nameTextField" destination="EJ7-ZN-x66" id="mgn-Rz-r3p"/>
+                        <segue destination="YYc-a7-ShP" kind="show" identifier="toCheckOut" id="Wjm-Nq-M3u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140.625" y="94.014084507042256"/>
+        </scene>
+        <!--CheckOut-->
+        <scene sceneID="XAF-MB-uiR">
+            <objects>
+                <viewController storyboardIdentifier="CheckOut" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YYc-a7-ShP" userLabel="CheckOut" customClass="CheckOutViewController" customModule="RNSwiftIntegration" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LHb-YV-6bu"/>
+                        <viewControllerLayoutGuide type="bottom" id="oJt-oC-Eca"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sEj-AW-IaD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Best Friend is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi1-Hl-YF3">
+                                <rect key="frame" x="14" y="44" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2d-uJ-LqD">
+                                <rect key="frame" x="156" y="44" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-vH-lQt">
+                                <rect key="frame" x="14" y="269" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select a new Best Friend"/>
+                                <connections>
+                                    <segue destination="lPS-CQ-sSX" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="ukT-iw-uRl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="friendNameLabel" destination="n2d-uJ-LqD" id="B5Z-Tu-Xbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Jo-QR-BGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lPS-CQ-sSX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1246.875" y="92.957746478873247"/>
         </scene>
     </scenes>
 </document>
