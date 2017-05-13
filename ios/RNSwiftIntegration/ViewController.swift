@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import React
 
 class ViewController: UIViewController {
     
@@ -28,15 +29,33 @@ class ViewController: UIViewController {
     //MARK: Actions
     @IBAction func setYourBestFriend(_ sender: UIButton) {
         MyBestFriend.name = nameTextField.text
-        
-        // Doc for segue:
-        // https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html
-        self.performSegue(withIdentifier: "toCheckOut", sender: nil)
+        //self.performSegue(withIdentifier: "toCheckOut", sender: nil)
+        callReactNative()
     }
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
         MyBestFriend.name = nil
         nameTextField.text = ""
+    }
+    
+    func callReactNative() {
+        // Do any additional setup after loading the view.
+        let jsCodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+        
+        let mockData: NSDictionary = [
+            "myBestFriendName": MyBestFriend.name!
+        ]
+        
+        let rootView = RCTRootView(
+            bundleURL: jsCodeLocation as URL!,
+            moduleName: "RNSwiftIntegration",
+            initialProperties: mockData as [NSObject : AnyObject],
+            launchOptions: nil )
+        
+        let vc = UIViewController()
+        vc.view = rootView
+        
+        self.present(vc, animated: true, completion: nil)
     }
 
 }
