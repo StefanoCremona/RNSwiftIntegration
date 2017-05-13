@@ -12,7 +12,7 @@ class App extends Component {
                     justifyContent: 'center'
                 }}
             >
-            <Text>Hello World!</Text>
+            <Text>Hello {this.props.myBestFriendName}!</Text>
             </View>
         );
     }
