@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     
+    static var myStaticReferenceOfUIVC: UIViewController? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -54,6 +56,8 @@ class ViewController: UIViewController {
         
         let vc = UIViewController()
         vc.view = rootView
+        
+        ViewController.myStaticReferenceOfUIVC = vc
         
         self.present(vc, animated: true, completion: nil)
     }

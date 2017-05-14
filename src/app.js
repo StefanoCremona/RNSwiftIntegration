@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { NativeModules, TouchableOpacity } from 'react-native';
+
+const MyNativeBridge = NativeModules.RNBridge;  //Use the swift name file
 
 class App extends Component {
 
@@ -13,6 +16,11 @@ class App extends Component {
                 }}
             >
             <Text>Hello {this.props.myBestFriendName}!</Text>
+            <TouchableOpacity
+                onPress={() => MyNativeBridge.dismissRNViewController()}
+            >
+                <Text style={{ color: 'red' }}>Go Back to Native</Text>
+            </TouchableOpacity>
             </View>
         );
     }

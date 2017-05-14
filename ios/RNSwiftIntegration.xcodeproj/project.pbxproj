@@ -14,6 +14,8 @@
 		1D03EC9E1E940E420025D8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D03EC9C1E940E420025D8F5 /* LaunchScreen.storyboard */; };
 		1D03ECA91E940E430025D8F5 /* RNSwiftIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03ECA81E940E430025D8F5 /* RNSwiftIntegrationTests.swift */; };
 		1D03ECB41E940E430025D8F5 /* RNSwiftIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03ECB31E940E430025D8F5 /* RNSwiftIntegrationUITests.swift */; };
+		1D15F4C01EC7ECCF001FD4B6 /* RNBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D15F4BF1EC7ECCF001FD4B6 /* RNBridge.swift */; };
+		1D15F4C31EC7EDAB001FD4B6 /* RNBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D15F4C21EC7EDAB001FD4B6 /* RNBridge.m */; };
 		1D7D37721EC755BF0082813A /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D37711EC755BF0082813A /* CheckOutViewController.swift */; };
 		1D96BF6A1EC76A3E00384FC9 /* MyBestFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */; };
 		43E669336AA7BC86B2CBC4F0 /* Pods_RNSwiftIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA13DA36F357D746C0A468 /* Pods_RNSwiftIntegration.framework */; };
@@ -52,6 +54,9 @@
 		1D03ECAF1E940E430025D8F5 /* RNSwiftIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNSwiftIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D03ECB31E940E430025D8F5 /* RNSwiftIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNSwiftIntegrationUITests.swift; sourceTree = "<group>"; };
 		1D03ECB51E940E430025D8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D15F4BF1EC7ECCF001FD4B6 /* RNBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBridge.swift; sourceTree = "<group>"; };
+		1D15F4C11EC7EDAA001FD4B6 /* RNSwiftIntegration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNSwiftIntegration-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D15F4C21EC7EDAB001FD4B6 /* RNBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBridge.m; sourceTree = "<group>"; };
 		1D7D37711EC755BF0082813A /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBestFriend.swift; sourceTree = "<group>"; };
 		1EA75CD378C42B5EFA6ADC16 /* Pods-RNSwiftIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftIntegrationTests/Pods-RNSwiftIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +141,9 @@
 				1D03EC9F1E940E420025D8F5 /* Info.plist */,
 				1D7D37711EC755BF0082813A /* CheckOutViewController.swift */,
 				1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */,
+				1D15F4BF1EC7ECCF001FD4B6 /* RNBridge.swift */,
+				1D15F4C21EC7EDAB001FD4B6 /* RNBridge.m */,
+				1D15F4C11EC7EDAA001FD4B6 /* RNSwiftIntegration-Bridging-Header.h */,
 			);
 			path = RNSwiftIntegration;
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 				TargetAttributes = {
 					1D03EC8F1E940E420025D8F5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					1D03ECA31E940E430025D8F5 = {
@@ -452,10 +461,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D15F4C31EC7EDAB001FD4B6 /* RNBridge.m in Sources */,
 				1D7D37721EC755BF0082813A /* CheckOutViewController.swift in Sources */,
 				1D96BF6A1EC76A3E00384FC9 /* MyBestFriend.swift in Sources */,
 				1D03EC961E940E420025D8F5 /* ViewController.swift in Sources */,
 				1D03EC941E940E420025D8F5 /* AppDelegate.swift in Sources */,
+				1D15F4C01EC7ECCF001FD4B6 /* RNBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,10 +619,13 @@
 			baseConfigurationReference = EB31357E39971B9BA898C9BC /* Pods-RNSwiftIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RNSwiftIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scremona.RNSwiftIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNSwiftIntegration/RNSwiftIntegration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -621,10 +635,12 @@
 			baseConfigurationReference = A400C7D77822BA8D9184B76F /* Pods-RNSwiftIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RNSwiftIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scremona.RNSwiftIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNSwiftIntegration/RNSwiftIntegration-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

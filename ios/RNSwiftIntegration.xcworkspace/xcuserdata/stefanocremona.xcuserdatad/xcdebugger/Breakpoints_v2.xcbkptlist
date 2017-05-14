@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RNSwiftIntegration/ViewController.swift"
+            timestampString = "516419221.768191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RNSwiftIntegration.ViewController.nameTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "RNSwiftIntegration"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanocremona/workspace/XCode/RNSwiftIntegration/ios/RNSwiftIntegration/ViewController.swift"
+                  timestampString = "516413588.278717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RNSwiftIntegration.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; RNSwiftIntegration.ViewController"
+                  moduleName = "RNSwiftIntegration"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanocremona/workspace/XCode/RNSwiftIntegration/ios/RNSwiftIntegration/ViewController.swift"
+                  timestampString = "516413588.282441"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RNSwiftIntegration.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RNSwiftIntegration.ViewController&gt;"
+                  moduleName = "RNSwiftIntegration"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stefanocremona/workspace/XCode/RNSwiftIntegration/ios/RNSwiftIntegration/ViewController.swift"
+                  timestampString = "516413588.286203"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
