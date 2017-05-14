@@ -10,10 +10,17 @@
 class RNBridge: NSObject {
     
     @objc(dismissRNViewController)
-    func dismissRNViewController() -> Void {  // Date is ready to use!
+    func dismissRNViewController() -> Void {
         DispatchQueue.main.async() {
             //ReactNativeViewController.myStaticReferenceOfUIVC!.navigationController?.popViewControllerAnimated(true)
             HeartTeamViewController.myStaticReferenceOfUIVC!.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @objc(callToCheckOutSegue)
+    func callToCheckOutSegue() -> Void {
+        DispatchQueue.main.async() {
+            HeartTeamViewController.myStaticReferenceOfUIVC!.performSegue(withIdentifier: "toCheckOut", sender: nil)
         }
     }
 }

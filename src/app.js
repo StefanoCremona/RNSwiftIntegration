@@ -21,6 +21,11 @@ class App extends Component {
             >
                 <Text style={{ color: 'red' }}>Go Back to Native</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => MyNativeBridge.callToCheckOutSegue()}
+            >
+                <Text style={{ color: 'blue' }}>Go To the Checkout</Text>
+            </TouchableOpacity>
             </View>
         );
     }

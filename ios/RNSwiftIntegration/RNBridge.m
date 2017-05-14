@@ -11,5 +11,6 @@
 @interface RCT_EXTERN_MODULE(RNBridge, NSObject)
 
 RCT_EXTERN_METHOD(dismissRNViewController)
+RCT_EXTERN_METHOD(callToCheckOutSegue)
 
 @end
