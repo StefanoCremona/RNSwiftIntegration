@@ -28,7 +28,7 @@ class App extends Component {
                         margin: 20,
                         padding: 10
                     }}
-                    onChangeText={(text) => this.setState({text})}
+                    onChangeText={(favouriteTeamName) => this.setState({favouriteTeamName})}
                     placeholder={'eg: AS ROMA'}
                     value={this.state.favouriteTeamName}
                 />
@@ -46,7 +46,11 @@ class App extends Component {
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={{ flex: 1, alignItems: 'center' }}
-                        onPress={() => MyNativeBridge.callToCheckOutSegue()}
+                        onPress={() => {
+                                MyNativeBridge.setFavouriteTeam(this.state.favouriteTeamName);
+                                MyNativeBridge.callToCheckOutSegue();
+                            }
+                        }
                     >
                         <Text style={{ color: 'blue' }}>Go To the Checkout</Text>
                     </TouchableOpacity>
