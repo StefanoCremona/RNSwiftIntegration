@@ -18,6 +18,7 @@
 		1D15F4C31EC7EDAB001FD4B6 /* RNBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D15F4C21EC7EDAB001FD4B6 /* RNBridge.m */; };
 		1D7D37721EC755BF0082813A /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D37711EC755BF0082813A /* CheckOutViewController.swift */; };
 		1D96BF6A1EC76A3E00384FC9 /* MyBestFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */; };
+		1DD041401EC87867002CDCD5 /* HeartTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0413F1EC87867002CDCD5 /* HeartTeamViewController.swift */; };
 		43E669336AA7BC86B2CBC4F0 /* Pods_RNSwiftIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EA13DA36F357D746C0A468 /* Pods_RNSwiftIntegration.framework */; };
 		64A2B54401A045FB1590F4D5 /* Pods_RNSwiftIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A35FAA2E68E43DE33DA5A8E /* Pods_RNSwiftIntegrationTests.framework */; };
 		84FB6E8D1EEFF4587A3D799B /* Pods_RNSwiftIntegrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFE95BFD0C4BF0D6BB6E54E /* Pods_RNSwiftIntegrationUITests.framework */; };
@@ -59,6 +60,7 @@
 		1D15F4C21EC7EDAB001FD4B6 /* RNBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBridge.m; sourceTree = "<group>"; };
 		1D7D37711EC755BF0082813A /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		1D96BF691EC76A3E00384FC9 /* MyBestFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBestFriend.swift; sourceTree = "<group>"; };
+		1DD0413F1EC87867002CDCD5 /* HeartTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartTeamViewController.swift; sourceTree = "<group>"; };
 		1EA75CD378C42B5EFA6ADC16 /* Pods-RNSwiftIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftIntegrationTests/Pods-RNSwiftIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B6399FF5F23CA108F52009F /* Pods-RNSwiftIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftIntegrationTests/Pods-RNSwiftIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D9FEEB5B7887CA7B845A483 /* Pods-RNSwiftIntegrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftIntegrationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftIntegrationUITests/Pods-RNSwiftIntegrationUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				1D15F4BF1EC7ECCF001FD4B6 /* RNBridge.swift */,
 				1D15F4C21EC7EDAB001FD4B6 /* RNBridge.m */,
 				1D15F4C11EC7EDAA001FD4B6 /* RNSwiftIntegration-Bridging-Header.h */,
+				1DD0413F1EC87867002CDCD5 /* HeartTeamViewController.swift */,
 			);
 			path = RNSwiftIntegration;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			files = (
 				1D15F4C31EC7EDAB001FD4B6 /* RNBridge.m in Sources */,
 				1D7D37721EC755BF0082813A /* CheckOutViewController.swift in Sources */,
+				1DD041401EC87867002CDCD5 /* HeartTeamViewController.swift in Sources */,
 				1D96BF6A1EC76A3E00384FC9 /* MyBestFriend.swift in Sources */,
 				1D03EC961E940E420025D8F5 /* ViewController.swift in Sources */,
 				1D03EC941E940E420025D8F5 /* AppDelegate.swift in Sources */,

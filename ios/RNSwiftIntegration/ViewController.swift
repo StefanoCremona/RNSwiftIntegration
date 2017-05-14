@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     
-    static var myStaticReferenceOfUIVC: UIViewController? = nil
+    //static var myStaticReferenceOfUIVC: UIViewController? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,8 @@ class ViewController: UIViewController {
     @IBAction func setYourBestFriend(_ sender: UIButton) {
         MyBestFriend.name = nameTextField.text
         //self.performSegue(withIdentifier: "toCheckOut", sender: nil)
-        callReactNative()
+        //callReactNative()
+        callHeartTeamViewController()
     }
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
@@ -40,7 +41,11 @@ class ViewController: UIViewController {
         nameTextField.text = ""
     }
     
-    func callReactNative() {
+    func callHeartTeamViewController() {
+        self.performSegue(withIdentifier: "toHeartTeam", sender: nil)
+    }
+    
+    /*func callReactNative() {
         // Do any additional setup after loading the view.
         let jsCodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
         
@@ -60,7 +65,7 @@ class ViewController: UIViewController {
         ViewController.myStaticReferenceOfUIVC = vc
         
         self.present(vc, animated: true, completion: nil)
-    }
+    }*/
 
 }
 

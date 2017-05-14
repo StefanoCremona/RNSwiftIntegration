@@ -13,7 +13,7 @@ class RNBridge: NSObject {
     func dismissRNViewController() -> Void {  // Date is ready to use!
         DispatchQueue.main.async() {
             //ReactNativeViewController.myStaticReferenceOfUIVC!.navigationController?.popViewControllerAnimated(true)
-            ViewController.myStaticReferenceOfUIVC!.dismiss(animated: true, completion: nil)
+            HeartTeamViewController.myStaticReferenceOfUIVC!.dismiss(animated: true, completion: nil)
         }
     }
 }
