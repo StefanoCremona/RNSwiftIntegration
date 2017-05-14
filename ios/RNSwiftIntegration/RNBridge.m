@@ -12,5 +12,6 @@
 
 RCT_EXTERN_METHOD(dismissRNViewController)
 RCT_EXTERN_METHOD(callToCheckOutSegue)
+RCT_EXTERN_METHOD(setFavouriteTeam:(NSString *)favouriteTeam )
 
 @end

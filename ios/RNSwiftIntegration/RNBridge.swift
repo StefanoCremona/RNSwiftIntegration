@@ -23,4 +23,10 @@ class RNBridge: NSObject {
             HeartTeamViewController.myStaticReferenceOfUIVC!.performSegue(withIdentifier: "toCheckOut", sender: nil)
         }
     }
+    
+    @objc(setFavouriteTeam:)
+    func setFavouriteTeam(favouriteTeamName: String) -> Void {
+        NSLog(favouriteTeamName)
+        MyBestFriend.favouriteTeam = favouriteTeamName
+    }
 }
