@@ -9,5 +9,6 @@
 class MyBestFriend {
  
     static var name: String? = nil
+    static var favouriteTeam: String? = nil
     
 }
