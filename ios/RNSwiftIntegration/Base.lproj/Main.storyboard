@@ -65,7 +65,6 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="rQh-XR-HCX" id="JOW-BT-pTh"/>
                         <outlet property="nameTextField" destination="EJ7-ZN-x66" id="mgn-Rz-r3p"/>
-                        <segue destination="YYc-a7-ShP" kind="show" identifier="toCheckOut" id="Wjm-Nq-M3u"/>
                         <segue destination="i8O-g8-agL" kind="show" identifier="toHeartTeam" id="LJe-y5-LsV"/>
                     </connections>
                 </viewController>
@@ -128,20 +127,32 @@
                                     <segue destination="lPS-CQ-sSX" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="ukT-iw-uRl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="He/She supports:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkh-v8-ZVi">
+                                <rect key="frame" x="14" y="73" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Footbal Team" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lak-rJ-2nC">
+                                <rect key="frame" x="165" y="73" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="footBallTeamLabel" destination="Lak-rJ-2nC" id="gPR-U8-Y3L"/>
                         <outlet property="friendNameLabel" destination="n2d-uJ-LqD" id="B5Z-Tu-Xbq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jo-QR-BGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="lPS-CQ-sSX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1967" y="94"/>
+            <point key="canvasLocation" x="1966.875" y="92.957746478873247"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Wjm-Nq-M3u"/>
-    </inferredMetricsTieBreakers>
 </document>

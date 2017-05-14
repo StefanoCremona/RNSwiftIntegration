@@ -12,10 +12,12 @@ class CheckOutViewController: UIViewController {
     
     //MARK: Properties
     @IBOutlet weak var friendNameLabel: UILabel!
+    @IBOutlet weak var footBallTeamLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         friendNameLabel.text = MyBestFriend.name
+        footBallTeamLabel.text = MyBestFriend.favouriteTeam
         // Do any additional setup after loading the view, typically from a nib.
     }
     
